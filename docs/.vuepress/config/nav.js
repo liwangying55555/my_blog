@@ -11,6 +11,7 @@ module.exports = [
       { text: '工具类', link: '/pages/2oddkhnxho7z/' },
       { text: 'HTML', link: '/pages/cqs3w1rgepkx/' },
       { text: 'JAVASCRIPT', link: '/pages/r40czjo9slxl/' },
+      { text: '服务器端', link: '/pages/6002c3/' },
     ]
   },
   {
