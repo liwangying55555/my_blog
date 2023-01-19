@@ -6,14 +6,21 @@
   "license": "MIT",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docs:add": "node ./script/index.js",
+    "build:local": "yarn docs:build && node ./script/build.js"
   },
   "devDependencies": {
     "dayjs": "^1.10.3",
+    "ftp": "^0.3.10",
     "vuepress": "^1.8.0",
     "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-plugin-one-click-copy": "^1.0.2",
     "vuepress-theme-vdoing": "^1.7.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "inquirer": "7.0.1"
+  }
 }
