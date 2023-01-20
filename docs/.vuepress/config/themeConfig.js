@@ -4,18 +4,17 @@ module.exports = {
   titleBadge: false, // 文章标题前的图标是否显示，默认true
   sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
   lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
-  logo: '', // 导航栏logo
+  logo: './img/logo.png', // 导航栏logo
   searchMaxSuggestions: 10, // 搜索结果显示最大数
   sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
 
   // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 => 方格 | 2 => 横线 | 3 => 竖线 | 4 => 左斜线 | 5 => 右斜线 | 6 => 点状
   bodyBgImg: [
-    // 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
     './img/banner03.jpg'
   ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
   bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
   updateBar: { // 最近更新栏
-    showToArticle: false, // 显示到文章页底部，默认true
+    showToArticle: true, // 显示到文章页底部，默认true
     moreArticle: '/' // “更多文章”跳转的页面，默认'/archives'
   },
   blogger: {
