@@ -10,7 +10,7 @@ module.exports = {
 
   // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 => 方格 | 2 => 横线 | 3 => 竖线 | 4 => 左斜线 | 5 => 右斜线 | 6 => 点状
   bodyBgImg: [
-    './img/banner03.jpg'
+    './img/bg.jpeg'
   ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
   bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
   updateBar: { // 最近更新栏
