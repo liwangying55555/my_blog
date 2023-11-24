@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const distPath = path.join(process.cwd(), 'docs/.vuepress/dist')
-const ftpPath = '/site/blog'
+const ftpPath = '/my_blog'
 
 async function initClient(client) {
     client = client
@@ -97,6 +97,8 @@ async function rmPath(dirPath, client) {
         const files = await list(dirPath, client)
         for (let index in files) {
             const _dir = files[index]
+            // linux 系统读取文件会有这两个文件名
+            if (['.', '..'].includes(_dir.name)) continue
             const _dirPath = `${dirPath}/${_dir.name}`
             if (_dir.type === 'd') {
                 await rmPath(_dirPath, client)

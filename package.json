@@ -8,7 +8,8 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:add": "node ./script/addTemplate.js",
-    "build:local": "yarn docs:build && node ./script/build.js"
+    "ftp":"node ./script/build.js",
+    "build:local": "yarn docs:build && yarn ftp"
   },
   "devDependencies": {
     "dayjs": "^1.10.3",
