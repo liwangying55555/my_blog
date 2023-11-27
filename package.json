@@ -1,48 +1,19 @@
 {
   "name": "my_blog",
   "version": "2.0.0",
-  "description": "泛泛之谈，个人娱乐",
-  "homepage": "http://110.41.53.191",
+  "description": "A project of vuepress-theme-hope",
   "license": "MIT",
-  "keywords": [
-    "vuepress",
-    "vue",
-    "blog",
-    "theme"
-  ],
-  "author": {
-    "name": "wangying"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@gitee.com:liwangying55555/my-blog.git"
-  },
+  "type": "module",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "ftp": "node ./script/build.js",
-    "deploy-git": "bash ./utils/deploy.sh",
-    "deploy-web": "yarn build && yarn ftp"
+    "dev": "vuepress dev src",
+    "clean-dev": "vuepress dev src --clean-cache",
+    "build": "vuepress build src",
+    "update-package": "pnpm dlx vp-update"
   },
-  "dependencies": {
-    "@vuepress/plugin-google-analytics": "1.9.10",
-    "@vuepress/plugin-medium-zoom": "^1.9.8",
-    "@vuepress/plugin-pwa": "^1.9.8",
-    "@vuepress/plugin-register-components": "1.9.10",
-    "axios": "^0.26.1",
-    "jquery": "^3.6.0",
-    "js-yaml": "^3.14.1",
-    "markdown-it-disable-url-encode": "^1.0.1",
-    "moment": "^2.29.3",
-    "vuepress": "^1.9.8",
-    "vuepress-plugin-boxx": "0.0.7",
-    "vuepress-plugin-code-copy": "^1.0.6",
-    "vuepress-plugin-container": "^2.1.5",
-    "vuepress-plugin-copyright": "^1.0.2",
-    "vuepress-plugin-fulltext-search": "^2.2.1",
-    "vuepress-plugin-sitemap": "2.3.1",
-    "vuepress-plugin-smooth-scroll": "^0.0.10",
-    "vuepress-theme-reco": "1.6.17",
-    "whatwg-fetch": "3.6.19"
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-rc.0",
+    "vue": "^3.3.9",
+    "vuepress": "2.0.0-rc.0",
+    "vuepress-theme-hope": "2.0.0-rc.1"
   }
 }
