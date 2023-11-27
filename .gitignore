@@ -1,3 +1,20 @@
+# vuepress
+gb-pages/
+assets/
+docs/.vuepress/dist/
+/.fastRequest/
+
+# vscode
+.vscode/
+
+# idea
+.idea/
+
+# npm
+package-lock.json
+node_modules
 node_modules/
-dist/
-yarn-lock.json
+
+# yarn
+yarn.lock
+yarn-error.log
