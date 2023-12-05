@@ -1,4 +1,5 @@
 import { hopeTheme } from 'vuepress-theme-hope'
+import { componentsPlugin } from 'vuepress-plugin-components'
 import navbar from './navbar.js'
 import sidebar from './sidebar.js'
 
@@ -78,7 +79,7 @@ export default hopeTheme({
       codetabs: true,
 
       // insert component easily
-      // component: true,
+      component: true,
 
       demo: true,
 

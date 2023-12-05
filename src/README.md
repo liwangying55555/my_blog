@@ -2,9 +2,9 @@
 home: false
 layout: BlogHome
 icon: home
-title: 博客主页
-# heroImage: /login
-# bgImage: /src/.vuepress/public/img/bg.jpg
+title: HOME
+# heroImage: /logo.png
+bgImage: /img/bg1.jpg
 heroText: 泛泛之谈，个人娱乐
 heroFullScreen: true
 tagline: 在摸鱼的道路上砥砺前行，冲鸭，平安喜乐
@@ -41,9 +41,3 @@ tagline: 在摸鱼的道路上砥砺前行，冲鸭，平安喜乐
 
 # footer: 自定义你的页脚文字
 ---
-
-<!-- 这是一个博客主页的案例。 -->
-
-<!-- 要使用此布局，你应该在页面前端设置 `layout: BlogHome` 和 `home: true`。 -->
-
-<!-- 相关配置文档请见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home/)。 -->
