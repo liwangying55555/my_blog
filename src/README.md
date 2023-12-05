@@ -4,7 +4,7 @@ layout: BlogHome
 icon: home
 title: HOME
 # heroImage: /logo.png
-bgImage: /img/bg1.jpg
+bgImage: /assets/bg/bg1.jpg
 heroText: 泛泛之谈，个人娱乐
 heroFullScreen: true
 tagline: 在摸鱼的道路上砥砺前行，冲鸭，平安喜乐

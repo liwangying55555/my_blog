@@ -1,6 +1,6 @@
 ---
 icon: circle-info
-cover: /img/bg3.jpg
+cover: /assets/bg/bg3.jpg
 article: false
 ---
 
