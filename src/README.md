@@ -7,6 +7,7 @@ title: Home
 bgImage: /assets/bg/bg1.jpg
 heroText: 泛泛之谈『个人娱乐』
 heroFullScreen: true
+article: false
 tagline: 在摸鱼的道路上砥砺前行，冲鸭，平安喜乐
 # projects:
 #   - icon: project

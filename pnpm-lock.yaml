@@ -3,22 +3,20 @@ lockfileVersion: 5.4
 specifiers:
   '@vuepress/client': 2.0.0-rc.0
   '@vuepress/plugin-container': 2.0.0-rc.0
-  '@vuepress/plugin-search': 2.0.0-rc.0
   vue: ^3.3.10
   vuepress: 2.0.0-rc.0
-  vuepress-plugin-comment2: 2.0.0-rc.2
   vuepress-plugin-components: 2.0.0-rc.2
+  vuepress-plugin-dynamic-title: ^1.0.0
   vuepress-plugin-search-pro: 2.0.0-rc.2
   vuepress-theme-hope: 2.0.0-rc.2
 
 devDependencies:
   '@vuepress/client': registry.npmjs.org/@vuepress/client/2.0.0-rc.0
   '@vuepress/plugin-container': registry.npmjs.org/@vuepress/plugin-container/2.0.0-rc.0
-  '@vuepress/plugin-search': registry.npmjs.org/@vuepress/plugin-search/2.0.0-rc.0
   vue: registry.npmjs.org/vue/3.3.10
   vuepress: registry.npmjs.org/vuepress/2.0.0-rc.0_maaihuxpoajulhxanyz4acg7bi
-  vuepress-plugin-comment2: registry.npmjs.org/vuepress-plugin-comment2/2.0.0-rc.2_vuepress@2.0.0-rc.0
   vuepress-plugin-components: registry.npmjs.org/vuepress-plugin-components/2.0.0-rc.2_vuepress@2.0.0-rc.0
+  vuepress-plugin-dynamic-title: registry.npmjs.org/vuepress-plugin-dynamic-title/1.0.0
   vuepress-plugin-search-pro: registry.npmjs.org/vuepress-plugin-search-pro/2.0.0-rc.2_vuepress@2.0.0-rc.0
   vuepress-theme-hope: registry.npmjs.org/vuepress-theme-hope/2.0.0-rc.2_vuepress@2.0.0-rc.0
 
@@ -2954,24 +2952,6 @@ packages:
     dependencies:
       '@vuepress/core': registry.npmjs.org/@vuepress/core/2.0.0-rc.0
       prismjs: registry.npmjs.org/prismjs/1.29.0
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - supports-color
-      - typescript
-    dev: true
-
-  registry.npmjs.org/@vuepress/plugin-search/2.0.0-rc.0:
-    resolution: {integrity: sha512-1ikJUgIN+7QrcAftxpWUKTrNVHEN2+k/az0Sjz7Ok7EthMHcG6qQsIb+AoK4WIQMsJkwVPLxwym/M1FbBTZDWQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@vuepress/plugin-search/-/plugin-search-2.0.0-rc.0.tgz}
-    name: '@vuepress/plugin-search'
-    version: 2.0.0-rc.0
-    dependencies:
-      '@vuepress/client': registry.npmjs.org/@vuepress/client/2.0.0-rc.0
-      '@vuepress/core': registry.npmjs.org/@vuepress/core/2.0.0-rc.0
-      '@vuepress/shared': registry.npmjs.org/@vuepress/shared/2.0.0-rc.0
-      '@vuepress/utils': registry.npmjs.org/@vuepress/utils/2.0.0-rc.0
-      chokidar: registry.npmjs.org/chokidar/3.5.3
-      vue: registry.npmjs.org/vue/3.3.10
-      vue-router: registry.npmjs.org/vue-router/4.2.5_vue@3.3.10
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
@@ -6414,6 +6394,12 @@ packages:
       - '@vue/composition-api'
       - supports-color
       - typescript
+    dev: true
+
+  registry.npmjs.org/vuepress-plugin-dynamic-title/1.0.0:
+    resolution: {integrity: sha512-CN1wtkPNG3shGzEFgqOa2dzojSle7SeAaf+Cw77Xmkv8jvB3wO5r2zXkIHTjiclQY1c5q5lE8h2A9vQaLdor2Q==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/vuepress-plugin-dynamic-title/-/vuepress-plugin-dynamic-title-1.0.0.tgz}
+    name: vuepress-plugin-dynamic-title
+    version: 1.0.0
     dev: true
 
   registry.npmjs.org/vuepress-plugin-feed2/2.0.0-rc.2_vuepress@2.0.0-rc.0:

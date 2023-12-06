@@ -30,7 +30,7 @@ export const configPlugins: PluginConfig = [
 // 主题内置插件配置
 export const themePlugins: PluginsOptions = {
   // 博客插件配置
-  blog: {
+  blog: { 
     hotReload: true, // 启用热更新
     timeline: 'archives', // 时间轴访问路径修改成archives
   },
