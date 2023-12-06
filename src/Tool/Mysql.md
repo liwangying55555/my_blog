@@ -1,8 +1,8 @@
 ---
 order: 2
-index: number
+index: true
 category:
-  - mysql
+  - Mysql
 ---
 
 # MySQL使用合集（完善中）

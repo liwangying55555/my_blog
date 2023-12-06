@@ -2,7 +2,7 @@
 home: false
 layout: BlogHome
 icon: home
-title: HOME
+title: Home
 # heroImage: /logo.png
 bgImage: /assets/bg/bg1.jpg
 heroText: 泛泛之谈🚢个人娱乐

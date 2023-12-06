@@ -1,6 +1,6 @@
 ---
 order: 1
-index: number
+index: true
 category:
   - Git
 ---
@@ -205,13 +205,13 @@ $ git tag [tag] [commit]
 # 删除本地tag
 $ git tag -d [tag]
 # 删除远程tag
-$ git push origin :refs/tags/[tagName]
+$ git push origin :refs/tag/[tagName]
 # 查看tag信息
 $ git show [tag]
 # 提交指定tag
 $ git push [remote] [tag]
 # 提交所有tag
-$ git push [remote] --tags
+$ git push [remote] --tag
 # 新建一个分支，指向某个tag
 $ git checkout -b [branch] [tag]
 ```
