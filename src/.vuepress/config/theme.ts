@@ -21,6 +21,7 @@ export default hopeTheme({
     end: ['Repo', 'TravellingLink', 'Search'],
   },
   repo: 'liwangying55555',
+  lastUpdated: true,
   // footer:
   //   'Powered by <a href="https://v2.vuepress.vuejs.org/zh/" target="_blank"> VuePress </a> | Theme <a href="https://theme-hope.vuejs.press/zh/" target="_blank"> Hope </a>',
   // copyright:
