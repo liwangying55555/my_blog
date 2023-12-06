@@ -7,10 +7,23 @@
     aria-label="开往"
     data-balloon-pos="down"
   >
-    <font-icon icon="travelling"></font-icon>
+    <img
+      class="train_svg"
+      src="/assets/svg/train.svg"
+      alt=""
+    />
+    <!-- <font-icon icon="bus"></font-icon> -->
   </a>
 </template>
 
 <script lang="ts" setup></script>
 
-<style lang="less" scoped></style>
+<style scoped>
+.vp-repo-link {
+  width: 24px;
+  .train_svg {
+    margin-top: 2px;
+    width: 100%;
+  }
+}
+</style>
