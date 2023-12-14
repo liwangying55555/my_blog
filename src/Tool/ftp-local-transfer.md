@@ -1,9 +1,8 @@
 ---
-# order: 3
-index: true
-date: 2023-12-07
+order: 3
+date: 2023-12-07 12:00:00
 category:
-  - 
+  - 工具
 ---
 
 # ftp-local-transfer
