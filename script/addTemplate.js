@@ -1,10 +1,12 @@
+const limitsDir = ['.vuepress', 'imgs']
+
 ;(async () => {
   try {
     const dayjs = require('dayjs')
     const inquirer = require('inquirer')
     const fs = require('fs')
     const path = require('path')
-    const rootPath = path.resolve(process.cwd(), './docs')
+    const rootPath = path.resolve(process.cwd(), './src')
 
     // 1、选择分类
     const choices = outDirList(rootPath)
@@ -26,9 +28,9 @@
       },
     ])
 
-    // 3、组合形成文件名
-    const filesIdx = fs.readdirSync(dirName).length + 1
-    const fileName = `${filesIdx < 10 ? '0' + filesIdx : filesIdx}.${docsName}`
+    // 3、取文件数量，默认排序
+    const filesOrder = fs.readdirSync(dirName).filter((dir) => !limitsDir.includes(dir)).length + 1
+    const fileName = docsName
 
     // 4、创建新文件
     const templatePath = path.join(process.cwd(), 'script/template.md')
@@ -41,7 +43,7 @@
       .toString()
       .replace('${title}', docsName)
       .replace('${date}', dayjs().format('YYYY-MM-DD HH:mm:ss'))
-      .replace('${permalink}', getRandomCode())
+      .replace('${order}', filesOrder)
     // 6、写入文件
     fs.writeFileSync(destPath, data)
 
@@ -60,21 +62,22 @@ function outDirList(dir) {
   const path = require('path')
   const fs = require('fs')
   let list = []
-  const isRuleFiles = /^\d{2}\..*/
 
   // 读取一级目录
   fs.readdirSync(dir)
-    .filter((_dir) => isRuleFiles.test(_dir))
+    .filter((_dir) => !limitsDir.includes(_dir))
     .forEach((m) => {
       // 判断二级目录是否还有子目录
       if (!m.endsWith('.md')) {
         const targetPath = path.join(dir, m)
-        const innerDirList = fs.readdirSync(targetPath).filter((_dir) => !_dir.endsWith('.md'))
+        const innerDirList = fs
+          .readdirSync(targetPath)
+          .filter((_dir) => !_dir.endsWith('.md') && !limitsDir.includes(_dir))
         if (innerDirList.length) {
           list = list.concat(outDirList(targetPath))
         } else {
           list.push({
-            name: m.slice(3),
+            name: m,
             value: targetPath,
           })
         }

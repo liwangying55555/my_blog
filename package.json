@@ -3,12 +3,12 @@
   "version": "2.0.0",
   "description": "A project of vuepress-theme-hope",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
     "clean-dev": "vuepress dev src --clean-cache",
-    "update-package": "pnpm dlx vp-update"
+    "update-package": "pnpm dlx vp-update",
+    "add-template": "node ./script/addTemplate.js"
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-rc.0",
@@ -17,6 +17,8 @@
     "vuepress": "2.0.0-rc.0",
     "vuepress-plugin-components": "2.0.0-rc.2",
     "vuepress-plugin-search-pro": "2.0.0-rc.2",
-    "vuepress-theme-hope": "2.0.0-rc.2"
+    "vuepress-theme-hope": "2.0.0-rc.2",
+    "dayjs": "^1.11.10",
+    "inquirer": "7.0.3"
   }
 }
