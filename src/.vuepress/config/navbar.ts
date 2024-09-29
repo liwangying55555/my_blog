@@ -29,6 +29,11 @@ export default navbar([
         ],
       },
       {
+        text: '可视化3D地图',
+        icon: '/assets/svg/cesium-map.svg',
+        link: '/FrontEnd/Cesium/从入门到放弃(一).md',
+      },
+      {
         text: '服务器端',
         icon: '/assets/svg/backend.svg',
         link: '/BackEnd/01.如何选择图床',

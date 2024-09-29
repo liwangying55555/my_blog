@@ -6,6 +6,7 @@ export default sidebar({
   '/BackEnd': 'structure',
   '/FrontEnd/HTML': 'structure',
   '/FrontEnd/JavaScript': 'structure',
+  '/FrontEnd/Cesium': 'structure',
   '/FrontEnd/CSS': 'structure',
   '/Focus': 'structure',
   '/About': 'structure',

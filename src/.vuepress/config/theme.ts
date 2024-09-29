@@ -24,7 +24,7 @@ export default hopeTheme({
   lastUpdated: true,
   footer:
     '泛泛之谈『个人娱乐』<br/> Powered by <a href="https://v2.vuepress.vuejs.org/zh/" target="_blank"> VuePress </a> | Theme <a href="https://theme-hope.vuejs.press/zh/" target="_blank"> Hope </a>',
-  copyright: 'Copyright © 2023 - present 鄂ICP备2023026866号-1',
+  copyright: 'Copyright © 2023 - 至今 鄂ICP备2023026866号-1',
   displayFooter: true,
   blog: {
     avatar:
