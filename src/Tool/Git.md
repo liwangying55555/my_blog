@@ -10,7 +10,7 @@ category:
 
 作为一个专业的前(mo)端(yu)选手，总有些奇怪的操作是**sourcetree**无法满足需求的，特此记录。
 
-## 一、论如何修改commit的信息
+## 论如何修改commit的信息
 
 ### 1.按需修改
 
@@ -63,7 +63,7 @@ $ git config --global user.email "email"
 $ git commit --amend
 ```
 
-## 二.论如何回退log
+## 论如何回退log
 
 见鬼的需求变更，导致了代码回退的需要
 
@@ -77,46 +77,7 @@ $ git reset --soft XXXX
 # --hard 直接回退 不保留文件
 ```
 
-## 三.git commit 提交规范列表
-
-> 参考 [vue](https://github.com/vuejs/vue/blob/dev/.github/COMMIT_CONVENTION.md) 规范 ([Angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular))
-
-### 1.提交格式
-
-```git
-git commit -m <type>[optional scope]: <description>
-```
-
-### 2.常用的 type 类型
-
-type ：用于表明我们这次提交的改动类型，是新增了功能？还是修改了测试代码？又或者是更新了文档？总结以下 13 种类型：
-
-- build：主要目的是修改项目构建系统(例如 glup，webpack，rollup 的配置等)的提交
-- ci：主要目的是修改项目继续集成流程(例如 Travis，Jenkins，GitLab CI，Circle 等)的提交
-- docs：文档更新
-- feat：新增功能
-- fix：bug 修复
-- perf：性能优化
-- refactor：重构代码(既没有新增功能，也没有修复 bug)
-- style：不影响程序逻辑的代码修改(修改空白字符，补全缺失的分号等)
-- test：新增测试用例或是更新现有测试
-- revert：回滚某个更早之前的提交
-- chore：不属于以上类型的其他类型(日常事务)
-- types: 类型定义文件更改
-- wip: 开发中，未完成功能
-
-optional scope：一个可选的修改范围。用于标识此次提交主要涉及到代码中哪个模块。
-
-description：一句话描述此次提交的主要内容，做到言简意赅。
-
-### 3.commit 提交示例
-
-```git
-git commit -m 'feat: 增加 xxx 功能'
-git commit -m 'fix: 修复 xxx 功能'
-```
-
-### 4.常用的提交命令(最全版本)
+## 常用的提交命令(最全版本)
 
 > [参考直达](https://segmentfault.com/a/1190000039147662)
 
@@ -309,4 +270,43 @@ $ git revert [commit]
 # 暂时将未提交的变化移除，稍后再移入
 $ git stash
 $ git stash pop
+```
+
+## git commit 提交规范列表
+
+> 参考 [vue](https://github.com/vuejs/vue/blob/dev/.github/COMMIT_CONVENTION.md) 规范 ([Angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular))
+
+### 1.提交格式
+
+```git
+git commit -m <type>[optional scope]: <description>
+```
+
+### 2.常用的 type 类型
+
+type ：用于表明我们这次提交的改动类型，是新增了功能？还是修改了测试代码？又或者是更新了文档？总结以下 13 种类型：
+
+- build：主要目的是修改项目构建系统(例如 glup，webpack，rollup 的配置等)的提交
+- ci：主要目的是修改项目继续集成流程(例如 Travis，Jenkins，GitLab CI，Circle 等)的提交
+- docs：文档更新
+- feat：新增功能
+- fix：bug 修复
+- perf：性能优化
+- refactor：重构代码(既没有新增功能，也没有修复 bug)
+- style：不影响程序逻辑的代码修改(修改空白字符，补全缺失的分号等)
+- test：新增测试用例或是更新现有测试
+- revert：回滚某个更早之前的提交
+- chore：不属于以上类型的其他类型(日常事务)
+- types: 类型定义文件更改
+- wip: 开发中，未完成功能
+
+optional scope：一个可选的修改范围。用于标识此次提交主要涉及到代码中哪个模块。
+
+description：一句话描述此次提交的主要内容，做到言简意赅。
+
+### 3.commit 提交示例
+
+```git
+git commit -m 'feat: 增加 xxx 功能'
+git commit -m 'fix: 修复 xxx 功能'
 ```
