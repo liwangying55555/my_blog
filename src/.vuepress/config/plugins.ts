@@ -1,14 +1,16 @@
 import { PluginConfig } from 'vuepress'
 import { PluginsOptions } from 'vuepress-theme-hope'
-// import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { searchProPlugin } from 'vuepress-plugin-search-pro'
 
 // VuePress插件配置
 export const configPlugins: PluginConfig = [
   // 谷歌统计插件
-  // googleAnalyticsPlugin({
-  //   id: 'G-GBZBT89WGJ'
-  // }),
+  [
+    '@vuepress/google-analytics',
+    {
+      ga: 'G-PJPBYGKH3K', // UA-00000000-0
+    },
+  ],
   // 搜索插件
   searchProPlugin({
     // 索引全部内容
@@ -30,7 +32,7 @@ export const configPlugins: PluginConfig = [
 // 主题内置插件配置
 export const themePlugins: PluginsOptions = {
   // 博客插件配置
-  blog: { 
+  blog: {
     hotReload: true, // 启用热更新
     timeline: 'archives', // 时间轴访问路径修改成archives
   },
