@@ -40,7 +40,7 @@ category:
 - 添加本地上传项目路径
 - 关键一步：**上传**
 
-### 安装
+### 1、安装
 
 ```shell
 npm i -g ftp-local-transfer
@@ -48,7 +48,7 @@ npm i -g ftp-local-transfer
 
 全局安装成功之后，因为涉及到配置文件的修改，请在具有管理员权限的命令工具中执行下下面的操作
 
-### 读取所有本地化配置
+### 2、读取所有本地化配置
 
 配置完所有参数之后，可以看到你的所有的配置信息
 
@@ -58,7 +58,7 @@ ftp-local-transfer config
 
 <img src='./imgs/2.png'/>
 
-### 设置fpt账户
+### 3、设置fpt账户
 
 此处`host`填写的你的服务器公网ip，账户和密码均为你自己的服务器ftp配置
 
@@ -68,7 +68,7 @@ ftp-local-transfer setFTP
 
 <img src='./imgs/3.png'/>
 
-### 添加本地上传项目路径
+### 4、添加本地上传项目路径
 
 :::tip
 本地上传文件夹路径为**绝对路径**，直接复制文件栏的路径即可
@@ -81,7 +81,7 @@ ftp-local-transfer addPath
 
 <img src='./imgs/4.png'/>
 
-### 自行修改配置
+### 5、自行修改配置
 
 如果想要原有的基础上直接修改配置文件，先执行`npm -g root`，会得到`npm`全局包的安装路径，找到`ftp-local-transfer`文件夹，配置文件在`config`文件夹中
 
@@ -100,7 +100,7 @@ $ ls
 ftpConfig.json  pathConfig.json
 ```
 
-### 关键一步：**上传**
+### 6、关键一步：**上传**
 
 最后一个，确认所有配置正确之后，选择本次上传的项目，直接开始🍅
 
