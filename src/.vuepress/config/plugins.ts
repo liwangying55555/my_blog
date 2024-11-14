@@ -4,13 +4,6 @@ import { searchProPlugin } from 'vuepress-plugin-search-pro'
 
 // VuePress插件配置
 export const configPlugins: PluginConfig = [
-  // 谷歌统计插件
-  [
-    '@vuepress/google-analytics',
-    {
-      ga: 'G-PJPBYGKH3K', // UA-00000000-0
-    },
-  ],
   // 搜索插件
   searchProPlugin({
     // 索引全部内容

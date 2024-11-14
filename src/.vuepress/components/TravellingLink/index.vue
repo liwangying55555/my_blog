@@ -16,7 +16,20 @@
   </a>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { onMounted } from 'vue'
+
+const addBusuanzi = () => {
+  const script = window.document.createElement('script')
+  script.src = '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+  script.async = true
+  window.document.head.appendChild(script)
+}
+onMounted(() => {
+  addBusuanzi()
+})
+
+</script>
 
 <style scoped>
 .vp-repo-link {
