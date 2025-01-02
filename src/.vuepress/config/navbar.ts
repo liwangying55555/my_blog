@@ -9,7 +9,7 @@ export default navbar([
       {
         text: '工具类',
         children: [
-          { text: 'Git', icon: '/assets/svg/git.svg', link: '/Tool/Git' },
+          { text: 'Git/Tools', icon: '/assets/svg/git.svg', link: '/Tool/Git' },
           {
             text: 'Emoji',
             icon: '/assets/svg/emoji.svg',
@@ -29,7 +29,7 @@ export default navbar([
         ],
       },
       {
-        text: '可视化3D地图',
+        text: 'Cesium',
         icon: '/assets/svg/cesium-map.svg',
         link: '/FrontEnd/Cesium/从入门到放弃(一).md',
       },
