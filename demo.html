@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <style>
+      .border {
+        display: flex;
+        align-items: center;
+      }
+      .border1 {
+        width: 0;
+        height: 0;
+        border-top: 10px red solid;
+        border-left: 50px red solid;
+        border-right: 50px transparent solid;
+      }
+      .skew {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+    }
+    .skew span {
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .skew:before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        z-index: 1;
+        transform: skewX(-10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h5>border</h5>
+    <div class="border">
+      <div class="border1"></div>
+    </div>
+    <h5>平行四边形</h5>
+    <div class="skew">
+      <span>我是文字</span>
+    </div>
+  </body>
+</html>
