@@ -4,12 +4,8 @@ date: 2026-05-12 17:01:03
 # cover: /assets/bg/bg3.jpg
 # article: true
 # star: false
-category:
-  - 工具
 tag:
   - 工具
-  - npm
-  - CLI
 ---
 
 
