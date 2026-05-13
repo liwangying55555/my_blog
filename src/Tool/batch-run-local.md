@@ -39,9 +39,31 @@ npm install -g batch-run-local
 br
 ```
 
-直接执行 `br` 会打开交互菜单，可选择新增项目、启动项目、查看项目、删除项目、打开 Web 页面或修改配置。
+直接执行 `br` 会打开交互菜单，界面如下。
 
-## 3. 添加项目
+![br 命令菜单](./imgs/ui02.png)
+
+## 3. 可视化操作界面
+
+```shell
+br ui
+```
+
+执行后会启动本地服务并打开浏览器。
+
+![batch-run-local 可视化操作界面](./imgs/ui01.png)
+
+Web 页面支持：
+
+- 查看已配置项目。
+- 新增、编辑或者删除项目。
+- 读取项目 `package.json` 中的 `scripts`。
+- 点击按钮执行对应脚本。
+- 打开项目目录。
+
+## 4. 命令行式使用
+
+### 添加项目
 
 ```shell
 br add
@@ -58,20 +80,22 @@ br add
 
 ```text
 项目名称：my_blog
-项目根路径：C:\wang\project\my_blog
+项目根路径：C:\XXXX\project\my_blog
 ```
 
 项目根路径需要指向包含 `package.json` 的目录。工具会在运行时读取该文件中的 `scripts`，不需要单独维护脚本配置。
 
-## 4. 查看项目
+### 查看项目
 
 ```shell
 br list
 ```
 
-该命令会列出已添加的项目名称、项目 id 和项目路径。
+该命令会列出已添加的项目名称、项目 id 和项目路径，以及配置文件所在地址。
 
-## 5. 启动项目
+可直接修改配置文件，以便更快捷的全局修改。
+
+### 启动项目
 
 ```shell
 br run
@@ -97,24 +121,6 @@ br run
 npm run dev
 ```
 
-## 6. Web 管理页面
-
-```shell
-br ui
-```
-
-执行后会启动本地服务并打开浏览器。
-
-![batch-run-local Web 管理页面](./imgs/ui01.png)
-
-Web 页面支持：
-
-- 查看已配置项目。
-- 新增或删除项目。
-- 读取项目 `package.json` 中的 `scripts`。
-- 点击按钮执行对应脚本。
-- 打开项目目录。
-
 ## 7. Git Bash 路径配置
 
 工具默认会自动检测常见的 Git Bash 路径：
@@ -130,11 +136,7 @@ C:\Program Files (x86)\Git\git-bash.exe
 br config
 ```
 
-`br config` 也可以修改 Web 服务端口，默认端口为：
-
-```text
-1234
-```
+`br config` 也可以修改 Web 服务端口，默认端口为：`1234`
 
 ## 8. 删除项目
 
