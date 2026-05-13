@@ -83,21 +83,10 @@ ftp-local-transfer addPath
 
 ### 5、自行修改配置
 
-如果想要原有的基础上直接修改配置文件，先执行`npm -g root`，会得到`npm`全局包的安装路径，找到`ftp-local-transfer`文件夹，配置文件在`config`文件夹中
+如果想要原有的基础上直接修改配置文件，执行`ftp-local-transfer config`即可，最底部会出现目前配置文件所在目录，打开对应文件直接修改即可。
 
 ```shell
-$ npm -g root
-C:\WINDOWS\system32\node_modules
-
-# 配置文件
-$ cd ftp-local-transfer
-
-$ ls
-CHANGELOG.md  config/  ftp.js  index.js*  LICENSE  node_modules/  package.json  README.md
-
-$ cd config
-$ ls
-ftpConfig.json  pathConfig.json
+$ ftp-local-transfer config
 ```
 
 ### 6、关键一步：**上传**
