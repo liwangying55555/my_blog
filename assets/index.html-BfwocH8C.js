@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6aeaaa40","path":"/FrontEnd/HTML/","title":"H T M L","lang":"zh-CN","frontmatter":{"title":"H T M L","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"Cora Wang"}}');export{e as data};

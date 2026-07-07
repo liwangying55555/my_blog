@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-16dec8f6","path":"/Moment/","title":"Moment","lang":"zh-CN","frontmatter":{"title":"Moment","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":"","copyright":{"author":"Cora Wang"}}');export{e as data};
