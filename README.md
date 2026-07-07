@@ -4,12 +4,12 @@
 
 ### 关于我
 
-话不多说[-直戳-](http://110.41.53.191/About)
+话不多说[-直戳-](https://liwangying55555.github.io/my_blog/About/)
 
 ### 零碎的小想法🍉
 
 用于记录一些奇奇怪怪的小想法🍎🍍🥭~
-[-走你-](http://110.41.53.191/Moment/01.%E5%8F%AF%E5%96%9C%E5%8F%AF%E8%B4%BA.html)
+[-走你-](https://liwangying55555.github.io/my_blog/Moment/01.%E5%8F%AF%E5%96%9C%E5%8F%AF%E8%B4%BA.html)
 
 ### 博客框架
 
